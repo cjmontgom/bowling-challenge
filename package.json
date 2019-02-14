@@ -1,0 +1,35 @@
+{
+  "name": "bowling-challenge",
+  "version": "1.0.0",
+  "description": "Bowling Challenge =================",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjmontgom/bowling-challenge.git"
+  },
+  "author": "Chloe Montgomery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjmontgom/bowling-challenge/issues"
+  },
+  "homepage": "https://github.com/cjmontgom/bowling-challenge#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-latest": "^6.24.1",
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
