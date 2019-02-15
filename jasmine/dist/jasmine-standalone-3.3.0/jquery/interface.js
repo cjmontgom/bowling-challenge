@@ -1,5 +1,11 @@
 $ (document).ready(function() {
 
+  $('.btn-toolbar').on('click', function() {
+    $('#btn0').on('click', function() {
+      $('#frame1A').text('0')
+    });
+  });
+
     // var thermostat = new Thermostat();
     //
     // function updateTempAndUsageView(colour) {

@@ -1,0 +1,17 @@
+body {
+  font-family: monospace;
+}
+
+h2 {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th {
+  background-color: #dddddd;
+}

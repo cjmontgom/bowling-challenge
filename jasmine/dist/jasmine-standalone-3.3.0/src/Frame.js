@@ -20,7 +20,7 @@ Frame.prototype.receiveBowl = function(bowlScore) {
 
 Frame.prototype.calcScore = function () {
   if(this.pinsLeft === 0) {
-    
+
   } else {
     this.changeScoreStatus();
     return this.bowl.reduce((a, b) => a + b, 0);
