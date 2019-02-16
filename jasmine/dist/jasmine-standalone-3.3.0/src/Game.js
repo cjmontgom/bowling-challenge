@@ -4,9 +4,9 @@ function Game() {
 };
 
 Game.prototype.save = function(frame) {
-  this.frames.push(frame)
+  this.frames.push(frame);
 };
 
 Game.prototype.addToTotal = function(num) {
-  this.runningTotal += num
+  this.runningTotal += num;
 };

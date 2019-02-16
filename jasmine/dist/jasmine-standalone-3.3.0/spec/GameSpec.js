@@ -24,8 +24,8 @@ describe ('Game', function() {
 
   describe ('addToTotal', function() {
     it ('adds to this.runningTotal', function() {
-      game.addToTotal(5)
-      expect(game.runningTotal).toEqual(5)
+      game.addToTotal(5);
+      expect(game.runningTotal).toEqual(5);
     });
   });
 
