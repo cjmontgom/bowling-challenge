@@ -75,4 +75,13 @@ describe ('Frame', function() {
     });
   });
 
+  describe ('completeFrame', function() {
+    it ('calculates and sets the final score', function() {
+      frame.bowlA(2);
+      frame.bowlB(4);
+      frame.completeFrame();
+      expect(frame.finalScore).toEqual(6);
+    });
+  });
+
 });

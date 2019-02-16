@@ -34,3 +34,8 @@ Frame.prototype.bowlC = function(num) {
     this.scores.push(num);
   };
 };
+
+Frame.prototype.completeFrame = function() {
+  var overallScore = this.scores.reduce((a, b) => a + b, 0);
+  this.finalScore = overallScore
+};
