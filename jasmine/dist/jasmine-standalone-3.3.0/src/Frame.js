@@ -36,7 +36,9 @@ Frame.prototype.bowlC = function(num) {
   } else {
     this.remainingPins -= num;
     this.scores.push(num);
+    this.completeFrame();
   };
+  this.bowl = 'D';
 };
 
 Frame.prototype.completeFrame = function() {
