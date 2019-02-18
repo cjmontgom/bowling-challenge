@@ -58,6 +58,13 @@ describe ('Frame', function() {
       frame.bowlB(5);
       expect(frame.scores).toEqual([2,5]);
     });
+    it ('knows if its on bowl A or bowl B', function() {
+      expect(frame.bowl).toBe('A');
+      frame.bowlA(5);
+      expect(frame.bowl).toBe('B');
+      frame.bowlB(3);
+      expect(frame.bowl).toBe('C');
+    });
   });
 
   describe ('bowlC', function() {

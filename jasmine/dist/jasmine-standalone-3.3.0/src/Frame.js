@@ -1,9 +1,11 @@
 function Frame(id) {
+  this.id = id
   this.remainingPins = 10;
   this.strike = false;
   this.spare = false;
   this.scores = [];
   this.finalScore = 'pending';
+  this.bowl = 'A'
 };
 
 Frame.prototype.bowlA = function(num) {
@@ -12,6 +14,7 @@ Frame.prototype.bowlA = function(num) {
   }
   this.remainingPins -= num;
   this.scores.push(num);
+  this.bowl = 'B';
 };
 
 Frame.prototype.bowlB = function(num) {
@@ -21,9 +24,10 @@ Frame.prototype.bowlB = function(num) {
     if (num === this.remainingPins) {
       this.spare = true;
     };
-    this.remainingPins -= num;
-    this.scores.push(num);
+    (this.remainingPins -= num);
+    (this.scores.push(num));
   };
+  this.bowl = 'C';
 };
 
 Frame.prototype.bowlC = function(num) {
@@ -36,6 +40,6 @@ Frame.prototype.bowlC = function(num) {
 };
 
 Frame.prototype.completeFrame = function() {
-  var overallScore = this.scores.reduce((a, b) => a + b, 0);
+  var overallScore = this.scores.reduce((a, b) => Number(a) + Number(b), 0);
   this.finalScore = overallScore
 };

@@ -29,4 +29,14 @@ describe ('Game', function() {
     });
   });
 
+  describe ('getAPreviousFrame', function() {
+    it ('retrieves a previous frame based on current frame, and how many back you want to go', function() {
+      var frame1 = {id: 1};
+      var frame3 = {id: 3};
+      game.save(frame1);
+      game.save(frame3);
+      expect(game.getAPreviousFrame(frame3, 2)).toEqual(frame1);
+    });
+  });
+
 });

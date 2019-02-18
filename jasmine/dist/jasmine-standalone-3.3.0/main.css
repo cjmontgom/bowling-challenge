@@ -1,4 +1,5 @@
 body {
+  background-color: #F7EEEE;
   font-family: monospace;
 }
 
@@ -8,10 +9,10 @@ h2 {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #DEBDBD;
   text-align: center;
   padding: 8px;
 }
 th {
-  background-color: #dddddd;
+  background-color: #DEBDBD;
 }
