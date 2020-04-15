@@ -18,7 +18,7 @@ A scorecard which calculates the score of a single users bowling game. Which is 
 # Ensure you have npm installed globally 
 
 # Clone the repository
-git clone https://github.com/cjmontgom/battle-game
+git clone https://github.com/cjmontgom/bowling-scorecard
 
 # Install dependencies
 npm install
