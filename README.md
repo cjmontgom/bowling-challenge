@@ -1,20 +1,36 @@
+# Bowling Scorecard
 
-Bowling Challenge
-=================
+My first javascript project! 
+A scorecard which calculates the score of a single users bowling game. Which is shockingly difficult.
+ 
 
-**THIS IS NOT A BOWLING GAME, IT IS A BOWLING SCORECARD. DO NOT GENERATE RANDOM ROLLS. THE USER INPUTS THE ROLLS.**
+### Technologies used
 
-Count and sum the scores of a bowling game for one player (in JavaScript).
+- Javascript
+- JQuery (for event handling)
+- HTML & CSS
+- jasmine (for testing)
 
-A bowling game consists of 10 frames in which the player tries to knock down the 10 pins. In every frame the player can roll one or two times. The actual number depends on strikes and spares. The score of a frame is the number of knocked down pins plus bonuses for strikes and spares. After every frame the 10 pins are reset.
 
-### Optional Extras
+### Quickstart
 
-In any order you like:
+```
+# Ensure you have npm installed globally 
 
-* Create a nice interactive animated interface with jQuery.
-* Set up [Travis CI](https://travis-ci.org) to run your tests.
-* Add [ESLint](http://eslint.org/) to your codebase and make your code conform.
+# Clone the repository
+git clone https://github.com/cjmontgom/battle-game
 
-You might even want to start with ESLint early on in your work — to help you
-learn Javascript conventions as you go along.
+# Install dependencies
+npm install
+
+# In your browser, open 
+bowling-scorecard/BowlingScorecard.html
+
+```
+
+### Run tests
+
+```
+# In your browser, open 
+bowling-scorecard/SpecRunner.html
+```
